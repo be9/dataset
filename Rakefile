@@ -1,6 +1,6 @@
 $:.unshift(File.join(File.dirname(__FILE__), 'lib'))
 
-require File.join(File.dirname(__FILE__), 'plugit/descriptor')
+#require File.join(File.dirname(__FILE__), 'plugit/descriptor')
 require 'rubygems'
 require 'spec/rake/spectask'
 
@@ -15,7 +15,7 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
-    s.name = 'dataset'
+    s.name = 'be9-dataset'
     s.summary = 'A simple API for creating and finding sets of data in your database, built on ActiveRecord.'
     s.email = 'adam@thewilliams.ws'
     s.files = FileList["[A-Z]*", "{lib,tasks}/**/*", "plugit/descriptor.rb"].exclude("tmp")
